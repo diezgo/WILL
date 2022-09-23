@@ -12,6 +12,14 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  //var str = strings.split(" ");
+  max = '';
+  for(var i = 0; i < strings.length; i++){
+    if(max.length < strings[i].length){
+      max = strings[i];
+    }
+  }
+  return max;
 }
 
 // No modifiques nada debajo de esta linea //

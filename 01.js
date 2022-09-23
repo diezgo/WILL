@@ -13,7 +13,7 @@ function soloNumeros(array) {
   // Tu código aca:
   var  num = [];
   for(var i = 0 ; i < array.length; i++ ){
-      if(isInteger(array[i])){
+      if(typeof array[i] === 'number'){
          num.push(array[i]);
       }
   }
